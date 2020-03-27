@@ -1,7 +1,13 @@
-# A minimal Ubuntu base image modified for Docker-friendliness
+# A minimal Buster base image modified for Docker-friendliness
 
-[![](https://badge.imagelayers.io/phusion/baseimage:latest.svg)](https://imagelayers.io/?images=phusion/baseimage:latest 'Get your own badge on imagelayers.io')
-[![Travis](https://img.shields.io/travis/phusion/baseimage-docker.svg)](https://travis-ci.org/phusion/baseimage-docker)
+
+## This is a fork
+
+For the original see [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker). This fork has some things changed to build a Debian Buster image when you run for example:
+```
+make build BASE_IMAGE=debian:buster NAME=hypernode/buster
+
+```
 
 _Baseimage-docker only consumes 8.3 MB RAM and is much more powerful than Busybox or Alpine. See why below._
 
